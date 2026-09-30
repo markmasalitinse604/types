@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     typeInference()
     usingUnderscores()
     booleansAndCharacters()
@@ -86,9 +86,9 @@ fun mutableVariables (input: Int, updatedNumber: Int){
     //mutable variable
     var number = input   //int type is inferred
 
-    number++;       //math operation
+    number++       //math operation
     println("Mutable number: " + number)
 
-    number = updatedNumber;       //allowed to reassign a var too
+    number = updatedNumber       //allowed to reassign a var too
     println("Mutable number (updated): " + number)
 }
