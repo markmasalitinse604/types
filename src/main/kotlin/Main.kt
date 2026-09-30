@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
     typeInference()
+    usingUnderscores()
 }
 
 fun typeInference() {
@@ -20,4 +21,21 @@ fun typeInference() {
     println("intNumber value is:    :  " + intNumber + ", and the type is: " + intNumber.javaClass)
     println("shortNumber value is:  :  " + shortNumber + ", and the type is: " + shortNumber.javaClass)
     println("byteNumber value is:   :  " + byteNumber + ", and the type is: " + byteNumber.javaClass)
+}
+
+fun usingUnderscores(){
+    println ("\n==========================================================")
+    println ("           Using underscores in numeric values            ")
+    println ("==========================================================")
+
+    //underscores is a feature makes number values more readable
+
+    println("   Using underscores to make values more readable")
+    val oneMillion = 1_000_000
+    val threeThousand = 3_000
+    val creditCardNumber = 1234_4321_5678_8765
+
+    println("" + oneMillion + " is the type: " + oneMillion.javaClass)
+    println("" + threeThousand + " is the type: " + threeThousand.javaClass)
+    println("" + creditCardNumber + " is the type: " + creditCardNumber.javaClass)
 }
