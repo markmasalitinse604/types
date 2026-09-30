@@ -1,6 +1,7 @@
 fun main(args: Array<String>) {
     typeInference()
     usingUnderscores()
+    booleansAndCharacters()
 }
 
 fun typeInference() {
@@ -38,4 +39,23 @@ fun usingUnderscores(){
     println("" + oneMillion + " is the type: " + oneMillion.javaClass)
     println("" + threeThousand + " is the type: " + threeThousand.javaClass)
     println("" + creditCardNumber + " is the type: " + creditCardNumber.javaClass)
+}
+
+fun booleansAndCharacters(){
+    println ("\n==========================================================")
+    println ("                  Booleans and Characters                 ")
+    println ("==========================================================")
+
+    //characters
+    val aChar = 'a'         //type inference
+    val bChar: Char = 'b'   //explicitly defining the type
+    println("aChar: " + aChar + " is the type: " + aChar.javaClass)
+    println("bChar: " + bChar + " is the type: " + bChar.javaClass)
+
+
+    //booleans
+    val aFlag = true
+    val bFlag: Boolean = false
+    println("aFlag: " + aFlag + " is the type: " + aFlag.javaClass)
+    println("bFlag: " + bFlag + " is the type: " + bFlag.javaClass)
 }
