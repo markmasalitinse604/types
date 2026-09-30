@@ -2,6 +2,7 @@ fun main(args: Array<String>) {
     typeInference()
     usingUnderscores()
     booleansAndCharacters()
+    explicitConversions(25)
 }
 
 fun typeInference() {
@@ -58,4 +59,20 @@ fun booleansAndCharacters(){
     val bFlag: Boolean = false
     println("aFlag: " + aFlag + " is the type: " + aFlag.javaClass)
     println("bFlag: " + bFlag + " is the type: " + bFlag.javaClass)
+}
+
+fun explicitConversions(inputByte: Byte){
+    println ("\n==========================================================")
+    println ("                   Explicit Conversions                   ")
+    println ("==========================================================")
+
+    val byteNum: Byte = inputByte       //static type check: OK
+    val intNum: Int = byteNum.toInt()   //explicit conversion: OK
+    val floatNum: Float = byteNum.toFloat()
+    val doubleNum: Double = intNum.toDouble()
+
+    println("byteNum    :  " + byteNum)
+    println("intNum     :  " + intNum)
+    println("floatNum   :  " + floatNum)
+    println("doubleNum  :  " + doubleNum)
 }
